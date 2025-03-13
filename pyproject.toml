@@ -1,0 +1,12 @@
+[project]
+name = "pyrotel-hello-world"
+version = "0.1.0"
+description = "Pyrotel hello world"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+ "opentelemetry-api>=1.31.0",
+ "opentelemetry-exporter-otlp-proto-http>=1.31.0",
+ "opentelemetry-sdk>=1.31.0",
+ "rotel",
+]
