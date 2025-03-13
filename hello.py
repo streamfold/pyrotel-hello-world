@@ -6,6 +6,7 @@ from opentelemetry.sdk.trace import TracerProvider
 from opentelemetry.sdk.resources import Resource, SERVICE_NAME
 
 from opentelemetry.exporter.otlp.proto.http.trace_exporter import OTLPSpanExporter as OTLPHTTPSpanExporter
+from opentelemetry.exporter.otlp.proto.grpc.trace_exporter import OTLPSpanExporter as OTLPGRPCSpanExporter
 
 from rotel import OTLPExporter
 from opentelemetry.sdk.trace.export import SimpleSpanProcessor
@@ -26,6 +27,9 @@ provider = TracerProvider(resource=resource)
 
 # Create the OTel exporter to send to the localhost Rotel agent
 exporter = OTLPHTTPSpanExporter(endpoint = "http://localhost:4318/v1/traces")
+
+if os.environ.get("USE_GRPC") is not None:
+    exporter = OTLPGRPCSpanExporter(endpoint = "http://localhost:4317")
 
 # Create a processor with the OTLP exporter to batch and send trace spans.
 # You could also use the BatchSpanProcessor, but since Rotel runs locally
