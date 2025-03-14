@@ -227,7 +227,7 @@ requires-dist = [
     { name = "opentelemetry-exporter-otlp-proto-grpc", specifier = ">=1.31.0" },
     { name = "opentelemetry-exporter-otlp-proto-http", specifier = ">=1.31.0" },
     { name = "opentelemetry-sdk", specifier = ">=1.31.0" },
-    { name = "rotel" },
+    { name = "rotel", specifier = ">=0.0.1a6" },
 ]
 
 [[package]]
@@ -247,15 +247,15 @@ wheels = [
 
 [[package]]
 name = "rotel"
-version = "0.0.1a5"
+version = "0.0.1a6"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "typing-extensions" },
 ]
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/26/5a/8b04d7171ad96ed096932f3dc93c3aec8b3a5aea6d155969bc9d59141090/rotel-0.0.1a5-py3-none-macosx_10_9_universal2.macosx_12_3_arm64.whl", hash = "sha256:26b67473fa3beabd4aa6016bdbcb50a3ba5a5e49c624861c47b040707be43cdb", size = 3488787 },
-    { url = "https://files.pythonhosted.org/packages/c6/7f/14afcd5e36e63652c9afb12f3aa9050cc3d407908b63ee60c9206c1bc54b/rotel-0.0.1a5-py3-none-manylinux2014_aarch64.manylinux_2_17_aarch64.whl", hash = "sha256:c93135541d9d24af2bbfd7cee67afedbfd70b4990e9ef8f0f81cdd0776fceca3", size = 3682971 },
-    { url = "https://files.pythonhosted.org/packages/e9/66/b7087e67f50778abc14d5613e8ba8f83e997910bd2c38b61533bd6599e82/rotel-0.0.1a5-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl", hash = "sha256:9d47235e6317afdd1877e2c04ed04b61468b94c5e6cd99ae0c1d9f739bdc0dde", size = 3871308 },
+    { url = "https://files.pythonhosted.org/packages/77/97/81fe17781c0ecf98fdd0c0f1e32bc2c6153f724765a5650be01160f7b3e4/rotel-0.0.1a6-py3-none-macosx_10_9_universal2.macosx_12_3_arm64.whl", hash = "sha256:c84a711c45a2a7a4ca598cfd5a1b168e461e4a43341d0f914dae71aa7d81f04d", size = 3523784 },
+    { url = "https://files.pythonhosted.org/packages/63/1d/b8c7febde372169772500b298a37bced7c2dda27f9381b57cd4902196445/rotel-0.0.1a6-py3-none-manylinux2014_aarch64.manylinux_2_17_aarch64.whl", hash = "sha256:7630fad7f301ba22d6feed157a044bb8d747343ed4b200c40989fe452a34faf7", size = 3718417 },
+    { url = "https://files.pythonhosted.org/packages/2b/75/a472bfd8965af61a39e2047d0f153fccabb965dfc2558090742afd046e00/rotel-0.0.1a6-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl", hash = "sha256:2ffc528eb2f9c670d4b5e939b6c26f3061a87cf0b4b0a926dab1ecc0ac2ab10c", size = 3912516 },
 ]
 
 [[package]]

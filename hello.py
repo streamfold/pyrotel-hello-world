@@ -31,9 +31,10 @@ exporter = OTLPHTTPSpanExporter(endpoint = "http://localhost:4318/v1/traces")
 if os.environ.get("USE_GRPC") is not None:
     exporter = OTLPGRPCSpanExporter(endpoint = "http://localhost:4317")
 
-# Create a processor with the OTLP exporter to batch and send trace spans.
+# Create a processor with the OTLP exporter to send trace spans.
+#
 # You could also use the BatchSpanProcessor, but since Rotel runs locally
-# and will batch, you can emit spans immediately.
+# and will batch, you can avoid double batching.
 processor = SimpleSpanProcessor(exporter)
 provider.add_span_processor(processor)
 

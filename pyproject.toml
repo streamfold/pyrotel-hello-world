@@ -9,5 +9,5 @@ dependencies = [
  "opentelemetry-exporter-otlp-proto-http>=1.31.0",
  "opentelemetry-exporter-otlp-proto-grpc>=1.31.0",
  "opentelemetry-sdk>=1.31.0",
- "rotel",
+ "rotel>=0.0.1a6",
 ]
